@@ -1,0 +1,271 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+    <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+  
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script> -->
+    <title>Zomato_home</title>
+
+    <style>
+        html,body{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        #header-img{
+            position: relative;
+            width:100vw;
+            height:600px;
+            background-image:linear-gradient(to right,rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwallpapersdsc.net%2Fwp-content%2Fuploads%2F2016%2F09%2FFood-HD-Background.png&f=1&nofb=1');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header{
+            width:100vw;
+            height:60px;
+        }
+        .nav-menu{
+            width:60vw;
+            height:60px;
+        }
+        .zomato{
+            display: block;
+            font-weight: bolder;
+            color:white;
+            text-align: center;
+            font-size: 68px;
+            margin:0;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .header-flex{
+            margin-top: 100px;
+        }
+        .nav-link{
+            border-bottom: 0px solid black;
+            transition: border-bottom 0.3s;
+            cursor: pointer;
+        }
+        .nav-link:hover{
+            border-bottom: 5px solid white;
+        }
+        .search-box{
+            width:30vw;
+            height:60px;
+            background-color: white;
+            border:none;
+            border-top-left-radius:20px ;
+            border-bottom-left-radius: 20px;
+            padding-left: 20px;
+            outline:none;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .search-btn{
+            width: 130px;
+            background-color: red;
+            color: white;
+            border: none;
+            font-size: 20px;
+            font-weight: bold;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        #second-section{
+            margin-top:50px;
+            margin-bottom: 50px;
+        }
+        .card{
+            width:100%;
+            height:200px;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px #ccc;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+            margin-bottom: 10px;
+        }
+        .card:hover{
+            box-shadow: 1px 1px 10px #000;
+            cursor:pointer;
+        }
+        .card-bottom{
+            position: absolute;
+            background-color: white;
+            height: 50px;
+            width: 100%;
+            margin-top: 150px;
+        }
+        #popular-locations{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .popular-heading{
+            font-size: 40px;
+            color: black;
+        }
+        .locations-div{
+            width:100%;
+            height:60px;
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .locations-div:hover{
+            box-shadow: 1px 1px 5px #ccc;
+        }
+        #get-zomato-app{
+            margin-top:50px;
+            margin-bottom: 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: rgba(234, 241, 130, 0.1);
+        }
+        .email-input{
+            width:250px;
+            height: 40px;
+            padding-left: 10px;
+            border:1px solid #ccc;
+            outline:none;
+            border-radius: 10px;
+            background-color: white;
+            
+        }
+        @media only screen and (max-width : 768px) {
+            .locations-div{
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+
+
+    <!-- <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        #header-img{
+            position: relative;
+            width: 100vw;
+            height: 600px;
+            background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.6), url(https://external-content.duckduckgo.com/iu/?u=http://wallpapersdsc.net/wp-content/uploads/2016/09/Food-HD-Background.png&f=1&nofb=1));
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover ;
+        }
+        header{
+            width:100vw;
+            height:60px;
+        }
+        .nav-menu{
+            width: 60vw;
+            height:60px;
+        }
+
+        .zomato
+        {
+            display:block;
+            font-weight: bolder;
+            color: white;
+            text-align: center;
+            font-size: 70px;
+            margin: 0px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .header-flex{
+            margin-top: 100px;
+        }
+
+        .nav-link{
+            border-bottom: 0px solid black;
+            transition: border-bottom 0.3s;
+            cursor: pointer;
+        }
+
+        .nav-link:hover{
+            border-bottom: 5px solid white;
+        }
+
+        .search-box{
+            width: 30vw;
+            height: 60px;
+            background-color: white;
+            border: none;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding-left: 20px;
+            outline: none;
+            font-weight: bold;
+            font-size: 10px;
+        }
+
+        .search-btn{
+            width: 130px;
+            background-color: red;
+            color:white;
+            border: none;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+    </style> -->
+</head>
+<body>
+    <div id="header-img">
+        <header>
+            <div class="d-flex justify-content-center">
+                <div class="nav-menu">
+                        <p class="float-left text-white m-0 mt-3">Get the app</p>
+                        <p class="float-right text-white m-0 mt-3 h4 nav-link">Sign up</p>
+                        <p class="float-right mr-4 text-white m-0 mt-3 h4 nav-link">Login</p>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="d-flex justify-content-center header-flex">
+                <p class="zomato">Zomato</p>
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <input type="text" placeholder="Search for dishes or cuisines..." class="search-box"/>
+                <button class="search-btn">Search</button>
+            </div>
+        </div>
+    </div>
+<!-- <div id="header_img">
+    <header> 
+        <div class="d-flex justify-content-center">
+            <div class="nav-menu">
+                <p class="float-left text-white m-0 mt-3">Get the app</p>
+                <p class="float-right text-white m-0 mt-3 h4 nav-link">login</p>
+                <p class="float-right text-white m-0 mt-3 h4 nav-link">sign up</p>
+            </div>
+            </div>
+    </header>
+    <div class="container">
+        <div class="d-flex justify-content-center header-flex">
+            <p class="zomato">Zomato</p>
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+            <input type="text"placeholder="search for dishes"class="search-box"/>
+            <button class="search-btn">Search</button>
+        </div>
+    </div>
+</div> -->
+</body>
+</html>
