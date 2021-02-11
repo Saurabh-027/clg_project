@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Order_line</title>
+  <style>
+    .zpic 
+    {
+        max-width: 12rem;
+        height: 2.7rem;
+        display: block;
+        cursor: pointer;
+    }
+    .search-box
+    {
+      width:30vw;
+      height:60px;
+      background-color: white; 
+      border: width 5px;
+      border-color: black;
+      border-top-left-radius:20px ;
+      border-bottom-left-radius: 20px;
+      padding-left: 20px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+   .search-btn
+   {
+      width: 130px;
+      background-color: red;
+      color: white;
+      border: width 5px;
+      font-size: 20px;
+      font-weight: bold;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+   }
+
+   #second-section
+   {
+      margin-top:60px;
+      margin-bottom:60px;
+   }
+   .card
+   {
+      width:100%;
+      height:200px;
+      border-radius: 10px;
+      box-shadow: 1px 1px 10px #ccc;
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+      margin-bottom: 10px;
+   }
+   .card-bottom
+   {
+      position: absolute;
+      background-color: white;
+      height: 50px;
+      width: 100%;
+      margin-top: 150px;
+   }
+
+   .shadow 
+    {
+      -moz-box-shadow:    inset 0 0 10px #000000;
+      -webkit-box-shadow: inset 0 0 10px #000000;
+       box-shadow:         inset 0 0 10px #000000;
+    }
+
+    .second-card
+   {
+    width:100%;
+      height:200px;
+      border-radius: 10px;
+      box-shadow: 1px 1px 10px #ccc;
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+      margin-bottom: 10px;
+   }
+   .second-card-bottom
+   {
+      position: absolute;
+      background-color: white;
+      height: 50px;
+      width: 100%;
+   }
+
+   .container-fluid {
+  width: auto !important;
+  margin-right: 0 !important;
+   
+}
+
+.last-part
+{
+  font-size: 1.2rem;
+  font-family: Okra,Helvetica,sans-serif;
+}
+  </style>
+  </head>
+  <body>
+    <div style="background-image:url('search1.jpg');">
+        <div class="d-flex justify-content-center">
+            <img src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png" class="zpic">
+        </div>
+
+          <div class="d-flex justify-content-center mt-4">
+              <input type="text" placeholder="Search for restaurant...." class="search-box"/>
+              <button class="search-btn">Search</button>
+            </div>
+            <p><br></p>
+    </div>
+    
+    <div class="shadow">
+      <div class="d-flex justify-content-center">
+      <h1> Inspiration for your first order</h1></div>
+     <section id="second-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="card">
+                <img src="soup.jpeg" height="100%" width="100%"/>
+                  <div class="card-bottom">
+                    <p class="h4 m-0 mt-2">Soup</p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card">
+                <img src="pasta.jpg" height="100%" width="100%">
+                <div class="card-bottom">
+                  <p class="h4 m-0 mt-2">Pasta</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card">
+                <img src="pizza.jpg" height="100%" width="100%">
+                <div class="card-bottom">
+                  <p class="h4 m-0 mt-2">Pizza</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="card">
+                <img src="chicken.jpg"height="100%" width="100%">
+                <div class="card-bottom">
+                  <p class="h4 m-0 mt-2">Chicken</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <p><br></p>
+    </div>
+    <p><br></p>
+    <div class="d-flex justify-content-center">
+         <h1>Order food online in Arhat Bazaar, Lakkhi Bagh, Dehradun</h1>
+    </div>
+    <section id="second-section">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4">
+          <a href="Gaylord_Xpress.html">
+           <div class="second-card">
+              <img src="gaylord.jpg"height="100%" width="100%">
+              <div class="second-card-bottom">
+                <p class="h4 m-0 mt-2">Gaylord Xpress</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      <div class="col-md-4">
+        <div class="second-card">
+           <img src="macdonald.jpg"height="100%" width="100%">
+           <div class="second-card-bottom">
+              <p class="h4 m-0 mt-2">McDonald's</p>
+           </div>
+         </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="second-card">
+          <img src="Urban_Dhaba.jpg"height="100%"width="100%">
+          <div class="second-card-bottom">
+            <p class="h4 m-0 mt-2">Urban Dhaba</p>
+          </div>     
+        </div>
+      </div>
+
+    </div>
+<br>
+<br>
+<br>
+
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="second-card">
+           <img src="maa.jpg"height="100%" width="100%">
+           <div class="second-card-bottom">
+             <p class="h4 m-0 mt-2">Maa ki rasoi</p>
+           </div>
+         </div>
+     </div>
+
+   <div class="col-md-4">
+     <div class="second-card">
+        <img src="Darbar.jpg"height="100%" width="100%">
+        <div class="second-card-bottom">
+           <p class="h4 m-0 mt-2">Darbar E Doon</p>
+        </div>
+      </div>
+   </div>
+
+   <div class="col-md-4">
+     <div class="second-card">
+       <img src="grill_bro.jpg"height="100%"width="100%">
+       <div class="second-card-bottom">
+         <p class="h4 m-0 mt-2">Grill Bro</p>
+       </div>     
+     </div>
+   </div>
+
+    </div>
+
+<br>
+<br>
+<br>
+
+    <div class="row">
+
+      <div class="col-md-4">
+        <div class="second-card">
+           <img src="briyani.jpg"height="100%" width="100%">
+           <div class="second-card-bottom">
+             <p class="h4 m-0 mt-2">Biryani House</p>
+           </div>
+         </div>
+     </div>
+
+   <div class="col-md-4">
+     <div class="second-card">
+        <img src="bakery.jpg"height="100%" width="100%">
+        <div class="second-card-bottom">
+           <p class="h4 m-0 mt-2">Bakery Plus</p>
+        </div>
+      </div>
+   </div>
+
+   <div class="col-md-4">
+     <div class="second-card">
+       <img src="momos.jpg"height="100%"width="100%">
+       <div class="second-card-bottom">
+         <p class="h4 m-0 mt-2">Wow Momos</p>
+       </div>     
+     </div>
+   </div>
+
+    </div>
+
+  </section>
+  <br>
+  <br>
+  <div class="container">
+    <div class="container-fluid">
+      <p class="h4 m-0 mt-2">Explore other options for you here</p>
+      <br>
+      <br>
+      <p class="h5 m-0 mt-2">Popular cuisines near me</p>
+      <br>
+         <div class="last-part">
+           <p class="mt-2">Bakery food near me  .Beverages food near me  .Biryani food near me  .Burger food near me
+             .Cafe food near me   .Chinese food near me   .Continental food near me  .Desserts food near me  .Finger food near me 
+             .Ice Cream food near me  .Italian food near me  .Mithai food near me  .Momos food near me  .Mughlai food near me 
+            .North Indian food near me  .Pizza food near me  .Rolls food near me  .Sandwich food near me  .South Indian food near me 
+             .Street food near me</p>
+         </div>
+   </div>
+</div>
+</body>
+</html>
